@@ -29,7 +29,7 @@ mv wd-v1-3-float32.ckpt stable-diffusion-webui/models/Stable-diffusion
 ```
 其他Model可以參考https://cyberes.github.io/stable-diffusion-models/
 
-## 4. 建立Python 3.10.6虛擬環境並安裝套件
+## 4. 使用conda create建立Python 3.10.6虛擬環境並安裝套件
 ```
 conda create --name python3_10_6 python=3.10.6 -y  &&  conda activate python3_10_6
 ```
