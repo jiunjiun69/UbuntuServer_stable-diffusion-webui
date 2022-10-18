@@ -16,7 +16,7 @@ ssh 帳號@IP
 sudo apt install wget git python3 python3-venv
 ```
 
-## 2. cd到想要放專案的路徑中
+## 2. cd到要放專案的路徑中，git clone 它
 ```
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
