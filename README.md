@@ -3,7 +3,7 @@
 
 [AI產圖webui專案來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-先在Ubuntu Server上裝好conda環境(顯卡環境也要裝好，記憶體要夠)
+先在Ubuntu Server上裝好conda環境(顯卡環境也要裝好，GPU記憶體要夠)
 
 我是用SSH連主機:
 ```
@@ -27,6 +27,7 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 wget https://huggingface.co/hakurei/waifu-diffusion-v1-3/resolve/main/wd-v1-3-float32.ckpt
 mv wd-v1-3-float32.ckpt stable-diffusion-webui/models/Stable-diffusion
 ```
+其他Model可以參考https://cyberes.github.io/stable-diffusion-models/
 
 建立Python 3.10.6虛擬環境並安裝套件
 ```
