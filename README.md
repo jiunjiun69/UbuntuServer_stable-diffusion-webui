@@ -1,5 +1,6 @@
 # UbuntuServer_stable-diffusion-webui
 紀錄運行stable-diffusion-webui在Ubuntu Server的筆記<AI產圖 WEB UI>
+![tempsnip](https://user-images.githubusercontent.com/48716485/196460276-f1615143-81f8-4b2c-9379-de2e1133d851.png)
 
 [AI產圖webui專案來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
@@ -58,3 +59,7 @@ cd /路徑/stable-diffusion-webui
 conda activate python3_10_6
 python webui.py --listen --port=8787 --gradio-auth=jiunjiun:jiunjiun69
 ```
+
+{{{masterpiece}}}, 1girl,  {{nsfw}}
+
+lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name, bad feet
