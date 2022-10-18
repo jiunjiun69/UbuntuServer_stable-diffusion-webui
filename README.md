@@ -46,7 +46,7 @@ bash webui.sh
 python webui.py --listen --port=8787 --gradio-auth=jiunjiun:jiunjiun69
 ```
 
-如果python webui.py會有套件安裝部正常的話，換成用python launch.py執行，以下為我的範例:
+如果python webui.py會有套件安裝不正常的話(像是報ModuleNotFoundError: No module named 'fastapi'的錯誤)，就換成用python launch.py執行，以下為我的範例:
 ```
 python launch.py --listen --port=8787 --gradio-auth=jiunjiun:jiunjiun69
 ```
