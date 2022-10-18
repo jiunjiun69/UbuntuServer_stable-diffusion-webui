@@ -51,3 +51,10 @@ python webui.py --listen --port=8787 --gradio-auth=jiunjiun:jiunjiun69
 ```
 python launch.py --listen --port=8787 --gradio-auth=jiunjiun:jiunjiun69
 ```
+
+## 7. 以後要執行時(範例):
+```
+cd /路徑/stable-diffusion-webui
+conda activate python3_10_6
+python webui.py --listen --port=8787 --gradio-auth=jiunjiun:jiunjiun69
+```
