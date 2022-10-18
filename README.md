@@ -1,0 +1,52 @@
+# UbuntuServer_-stable-diffusion-webui
+紀錄運行stable-diffusion-webui在Ubuntu Server的筆記<AI產圖 WEB UI>
+
+[AI產圖webui專案來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+
+先在Ubuntu Server上裝好conda環境(顯卡環境也要裝好，記憶體要夠)
+
+我是用SSH連主機:
+```
+ssh 帳號@IP
+再輸入密碼
+```
+
+[依賴項要先裝好](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Dependencies)
+```
+sudo apt install wget git python3 python3-venv
+```
+
+cd到想要放專案的路徑中
+```
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+```
+
+載model放到`models/Stable-diffusion`中
+[推薦這個model](https://huggingface.co/hakurei/waifu-diffusion-v1-3/resolve/main/wd-v1-3-float32.ckpt)
+```
+wget https://huggingface.co/hakurei/waifu-diffusion-v1-3/resolve/main/wd-v1-3-float32.ckpt
+mv wd-v1-3-float32.ckpt stable-diffusion-webui/models/Stable-diffusion
+```
+
+建立Python 3.10.6虛擬環境並安裝套件
+```
+conda create --name python3_10_6 python=3.10.6 -y  &&  conda activate python3_10_6
+```
+
+[安裝套件環境(要先切到專案中)(以NVidia GPUs為範例)](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-NVidia-GPUs)
+```
+cd stable-diffusion-webui
+bash webui.sh
+```
+
+安裝好後會直接在本地執行，可以Ctrl + C終止，然後使用python webui.py就可以執行了，再根據[Command Line Arguments and Settings](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings#running-online)這篇加入或調整參數
+
+以下為我的範例(開啟0.0.0.0監聽，使用8787 PORT，設置ui介面帳密登入)，可供外網連線(需先確定PORT對外有開通)
+```
+python webui.py --listen --port=8787 --gradio-auth=jiunjiun:jiunjiun69
+```
+
+如果python webui.py會有套件安裝部正常的話，換成用python launch.py執行，以下為我的範例:
+```
+python launch.py --listen --port=8787 --gradio-auth=jiunjiun:jiunjiun69
+```
