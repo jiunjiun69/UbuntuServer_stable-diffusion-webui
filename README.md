@@ -1,4 +1,4 @@
-# UbuntuServer_-stable-diffusion-webui
+# UbuntuServer_stable-diffusion-webui
 紀錄運行stable-diffusion-webui在Ubuntu Server的筆記<AI產圖 WEB UI>
 
 [AI產圖webui專案來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
